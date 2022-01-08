@@ -16,6 +16,7 @@ if len(sys.argv) == 2:
 else:
    print("Invalid amount of Argument")
    print("Usage: python3 portscanner2.py [URL]")
+   sys.exit()
 
 print("-" * 50)
 print("Scanning Target: " + target)
