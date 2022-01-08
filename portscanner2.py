@@ -3,9 +3,11 @@
 import socket
 import pyfiglet
 import sys
+import subprocess
 from datetime import datetime
 
 ascii_banner = pyfiglet.figlet_format("PORT SCANNER")
+subprocess.call('clear', shell=True)
 print(ascii_banner)
 
 if len(sys.argv) == 2:
@@ -29,7 +31,7 @@ try:
           print("Port {} is Open".format(port))
       s.close()
 
-except keyboardInterrupt:
+except KeyboardInterrupt:
     print("\n Exiting Program !!!")
     sys.exit()
 
